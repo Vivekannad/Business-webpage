@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Sriracha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.sectionStyles {
+    width: 100%;
+    height: 100%;
+}
+
+.bgImage {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sectionChildren {
+    width: 80%;
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+}
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a0909;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    opacity: 1;
+    animation: disappearEffect 1000ms 1000ms forwards; /* forwards retain the element the styles of last keyframe */
+    z-index: 100;
+    font-family: 'Roboto', sans-serif;
+  }
+  @keyframes disappearEffect {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0) ;
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+.home {
+    background-image: url(./home-bg-1.webp);
+    transform: translate(0px, 0px);
+}
+
+.home .container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.placeholder {
+    width: 20%;
+    height: 100%;
+}
+
+.leftMenu {
+    width: 20%;
+    height: 100%;
+    background-color: #5b5b5b;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.leftMenu .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.leftMenu .title h1 {
+    color: cadetblue;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.leftMenu .title h1 span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: chocolate;
+}
+
+.leftMenu .title img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 10%;
+}
+
+.leftMenu nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
+}
+
+.leftMenu nav .scrollLinks {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.leftMenu nav .scrollLinks li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.leftMenu nav .scrollLinks li {
+    opacity: 0.6;
+    transition: opacity 400ms;
+}
+
+.leftMenu nav .scrollLinks li:hover {
+    opacity: 1;
+
+}
+
+.leftMenu nav .socialLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* margin: 10% 0; */
+    list-style: none;
+    gap: 2rem;
+}
+
+.leftMenu nav .socialLinks li {
+    opacity: 0.7;
+    font-size: 1.5rem;
+    transition: font-size 500ms;
+}
+
+.leftMenu nav .socialLinks li:hover {
+    opacity: 1;
+    font-size: 2rem;
+}
+
+.leftMenu nav .socialLinks li a {
+    color: black;
+}
+
+.leftMenu nav .socialLinks li a i {
+    font-size: 100%;
+}
+
+.home main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.home main .businessHook {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* height: 90%; */
+    gap: 10px;
+}
+
+.home main .businessHook h1 {
+    color: cadetblue;
+    font-size: 6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.home main .businessHook h1 span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: chocolate;
+}
+
+.home main .businessHook h2 {
+    color: white;
+    font-size: 2.7rem;
+    font-family: 'Roboto', serif;
+    font-style: italic;
+}
+
+.home main .exploreBtn {
+    align-self: flex-start;
+    padding: 5px 0;
+    /* border-bottom: 2px solid #5e7310; */
+    position: absolute;
+    bottom: 2.2rem;
+    background-color: transparent;
+}
+
+
+.home main .exploreBtn a {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 1.7rem 10px;
+    font-size: 1.3rem;
+    font-family: monospace;
+}
+
+.about {
+    display: flex;
+    background-image: url(./about-bg.webp);
+}
+
+.about .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about .aboutCard {
+    width: 60%;
+    background-color: beige;
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    font-size: 1.3rem;
+}
+
+.about .aboutCard h1 {
+    font-size: 5rem;
+    color: #5e7310;
+    font-weight: 700;
+}
+
+.about .aboutCard .description {
+    padding-left: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.about .aboutCard .description p {
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.services {
+    background-image: url(./service-bg.webp);
+}
+
+.services .container {
+    display: flex;
+    height: 100%;
+}
+
+.services .container .servicesContent {
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+
+}
+
+.services .container .servicesContent .servicesDesc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+
+.services .container .servicesContent .servicesDesc h1 {
+    font-size: 5rem;
+}
+
+
+.services .container .servicesContent .servicesDesc p {
+    font-size: 1.2rem;
+}
+
+.services .container .servicesContent .servicesCards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .container .servicesContent .servicesCards .card {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    align-items: center;
+    background-color: azure;
+    color: black;
+    border: 2px solid black;
+    gap: 1rem;
+    border-radius: 10px;
+    border: none;
+    transition: box-shadow 1s;
+    transition: transform ease-in-out 0.5s;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.services .container .servicesContent .servicesCards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.services .container .servicesContent .servicesCards .card .cardImage {
+    height: 210px;
+}
+
+.services .container .servicesContent .servicesCards .card .cardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    border-radius: 10px;
+}
+
+.services .container .servicesContent .servicesCards .card .title h1 {
+    font-family: 'Roboto', serif;
+
+}
+
+.services .container .servicesContent .servicesCards .card .desc {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.services .container .servicesContent .servicesCards .card .desc p {
+    margin-bottom: 10px;
+}
+
+.services .container .servicesContent .servicesCards .card .desc p span {
+    color: burlywood;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
