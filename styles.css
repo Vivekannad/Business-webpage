@@ -277,16 +277,16 @@ body {
 
 .services {
     background-image: url(./service-bg.webp);
+    height: auto;
 }
 
 .services .container {
     display: flex;
-    height: 100%;
 }
 
 .services .container .servicesContent {
     display: flex;
-    padding: 3rem;
+    padding: 1rem 3rem;
     flex-direction: column;
 
 }
@@ -377,4 +377,6 @@ footer {
     align-items: center;
     justify-content: flex-end;
     padding: 10px;
+    position: relative;
+    bottom: 0;
 }
