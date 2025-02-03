@@ -27,20 +27,16 @@ Welcome to **VKAND**, a freelance web development project focused on delivering 
 Check out the live demo [VKAND](#) *(https://vivekannad.github.io/Business-webpage/)*.
 
 ## 🖼️ Pictures
-![Picture](![Screenshot 2025-02-04 004512](https://github.com/user-attachments/assets/2929282e-f041-4493-8c2b-98fd5ed60916))
-![Picture2](![Screenshot 2025-02-04 004533](https://github.com/user-attachments/assets/d135cf80-b62d-443f-a909-39c48eeeb9b5))
-![Picture3](![Screenshot 2025-02-04 004547](https://github.com/user-attachments/assets/c8c10f72-97ee-44d2-875c-ca22311b47fb))
+![Screenshot 2025-02-04 004512](https://github.com/user-attachments/assets/2929282e-f041-4493-8c2b-98fd5ed60916)
+![Screenshot 2025-02-04 004533](https://github.com/user-attachments/assets/d135cf80-b62d-443f-a909-39c48eeeb9b5)
+![Screenshot 2025-02-04 004547](https://github.com/user-attachments/assets/c8c10f72-97ee-44d2-875c-ca22311b47fb)
 
 ## 📌 Installation & Usage
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/vkand-website.git
    ```
-2. Navigate to the project folder:
-   ```bash
-   cd vkand-website
-   ```
-3. Open `index.html` in a browser.
+2. Open `index.html` in a browser.
 
 ## 📩 Feedback & Contributions
 Have suggestions or want to contribute? Feel free to fork the repository and submit a pull request.
